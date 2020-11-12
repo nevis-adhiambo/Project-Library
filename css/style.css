@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.app__bodyHeader{
+    border-bottom: 2px solid ;
+}
+
+.image{
+    height: 60px;
+    width:60px;
+    border:2px solid #555;
+    border-radius: 50%;
+}
+
+.no_of_books_present {
+    position: relative;
+}
+
+.no_of_books_present .bookNo{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    font-size:13px;
+    top: -15px;
+    left: 15px;
+}
+
+.action{
+    position: relative;
+}
+.action .pointer{
+    margin-left:20px;
+    animation:scale 2s linear infinite;
+}
+
+.filter{
+    border-top:1px solid crimson;
+    border-bottom:1px solid crimson;
+}
+
+@keyframes scale {
+    0%{
+        transform:rotate(-85deg) scale(1.1);
+    }
+    50%{
+        transform:rotate(-25deg) scale(1);
+    }
+    75%{
+        transform:rotate(-85deg) scale(1.1);
+    }
+    100%{
+        transform:rotate(-35deg) scale(0);
+    }
+}
